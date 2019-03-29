@@ -6,11 +6,16 @@
 //color
 $txt-white: #fff;
 $txt-black: #000;
+$txt-blue: #3b91bf;
+$txt-deep-blue: #3b91c0;
+$txt-gray: rgba(0, 0, 0, 0.6);
+$footer-color:#272727;
+$footer-time-color:#dad6d6;
 
 
 html,body{
     width: 100%;
-	height: 3000px;
+    height: auto;
     -webkit-overflow-scrolling: touch; 
 }
 .header-bg{
@@ -89,26 +94,215 @@ html,body{
         }
         .section-2-info{
             width: 100%;
-            height: 100%;
+            height: auto;
+            overflow: hidden;
             display: flex;
             justify-content: space-between;
             margin-top: 62px;
             position: relative;
+            .section-2-info-description{
+                width: 100%;
+                position: absolute;
+                z-index: 2;
+                h3{
+                    position: relative;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 1.42;
+                    &::after{
+                        content: '';
+                        background-image: url("~arrow-icon.svg");
+                        position: absolute;
+                        top:20%;
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+                        background-repeat: no-repeat;
+                    }
+                }
+                .total-progress{
+                    margin-top: 44px;
+                    line-height: 1.63;
+                    h4{
+                        font-size: 16px;
+                        .sub-txt-color{
+                            color: $txt-blue;
+                        }
+                        .sub-txt-gray{
+                            font-size: 12px;
+                            letter-spacing: 1.2px;
+                            color: $txt-gray;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+                .average-progress{
+                    display: flex;
+                    margin-top: 10px;
+                    .man-progress-bar{
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        margin-right: 15rem;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .progress-number-info{
+                            position: absolute;
+                            margin-left: 110%;
+                            .year-number{
+                                margin: 0 20px;
+                                font-size: 70px;
+                                line-height: 48px;
+                                color: $txt-deep-blue;
+                            }
+                        }
+                        .number-txt{
+                            position: absolute;
+                            bottom: 10px;
+                            width: 120%;
+                            margin-left: 120%;
+                            font-size: 14px;
+                            line-height: 20px;
+                            letter-spacing: 1.4px;
+                            text-transform: uppercase;
+                        }
+                    }
+                    .year-progress-bar{
+                        display: flex;
+                        .year{
+                            margin: 42px 10px 0 0;
+                            li{
+                                margin-bottom: 40px;
+                            }
+                            .year-2018{
+                                margin-bottom: 0;
+                            }
+                        }
+                        .progress-bar{
+                            margin-top: 40px;
+                            #container2016 {
+                                width: 296px;
+                                position: relative;
+                            }
+                            #container2017 {
+                                margin-top: 40px;
+                                width: 315px;
+                                position: relative;
+                            }
+                            #container2018 {
+                                margin-top: 40px;
+                                width: 330px;
+                                position: relative;
+                            }
+                        }
+                    }
+                }
+            }
             .section-2-data{
                 position: absolute;
-                width: 50%;
+                width: 40%;
                 height: 100%;
-                background:#fff;
-                border-left: 1px solid #fff;
+                background:$txt-white;
+                border-left: 1px solid $txt-white;
+                //三角形遮罩
+                &::after{
+                    position: absolute;
+                    z-index: 0;
+                    top: 0;
+                    right: -300px;
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    border-color: transparent $txt-white;
+                    border-width: 0px 0px 680px 300px;
+                    border-style: solid;
+                }
             }
             .section-2-video{
                 width: 100%;
-                height: 100%;
                 video{
                     width: 100%;
                     height: auto;
                 }
             }
+        }
+        .section-2-info2{
+            margin-top: 124px;
+            h4{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid $txt-deep-blue;
+                padding: 1rem 0;
+                .info2-sbutitle{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        margin-right: 10px;
+                    }
+                    .sub-txt-color{
+                        color: $txt-blue;
+                        margin-right: 10px;
+                    }
+                }
+                .unit-subtitle{
+                    font-size: 12px;
+                    line-height: 18px;
+                    letter-spacing: 1.2px;
+                    color: $txt-gray;
+                }
+            }
+        }
+        .s-item2{
+            top: 50%;
+            .average-number{
+                margin: 0 20px;
+                font-size: 70px;
+                line-height: 48px;
+                color: $txt-deep-blue;
+            }
+            .progress-bar{
+                margin-top: 40px;
+                #secContainer2016 {
+                    width: 296px;
+                    position: relative;
+                }
+                #secContainer2017 {
+                    margin-top: 40px;
+                    width: 315px;
+                    position: relative;
+                }
+                #secContainer2018 {
+                    margin-top: 40px;
+                    width: 330px;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
+footer{
+    width: 100%;
+    height: 192px;
+    background-color: $footer-color;
+    .footer-wrap{
+        width: 1200px;
+        height: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        span{
+            font-size: 16px;
+            font-weight: 300;
+            margin-top: 14.6px;
+            line-height: 1.63;
+            color: $footer-time-color;
         }
     }
 }

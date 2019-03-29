@@ -72,7 +72,7 @@ module.exports = {
 				use: 'babel-loader'
 			},
 			{
-				test: /\.(jpe?g|png|gif)$/,
+				test: /\.(jpe?g|png|gif|svg)$/,
 				use: [
 					{
 						loader: 'url-loader',
@@ -107,7 +107,8 @@ module.exports = {
 	plugins: [
 		extractCSS,
 		new CopyWebpackPlugin([
-			{ from: 'assets', to: 'assets' }
+			{ from: 'assets', to: 'assets'},
+			{ from: 'images', to: 'images'}
 		]),
 		new webpack.ProvidePlugin({
 			$: 'jquery',

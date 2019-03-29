@@ -12,7 +12,7 @@
         <div class="header-wrap">
             <ul class="top-menu">
                 <li><a href="#">DATA AND FIGURES</a></li>
-                <li><a href="#"><img src="assets/annualreport.png" alt=""></a></li>
+                <li><a href="#"><img src="./images/annualreport.png" alt=""></a></li>
                 <li><a href="#">FULL ANNUAL REPORT</a></li>
             </ul>
         </div>
@@ -61,15 +61,101 @@
                 <h2 class="cn-title">數字快覽</h2>
             </div>
             <div class="section-2-info">
-                <div class="section-2-data">
+                <div class="section-2-info-description">
                     <h3>運輸本業 Core Transit Business</h3>
+                    <div class="total-progress">
+                        <h4>
+                            <span class="sub-txt-color">年度總運量</span>
+                            Annual Ridership
+                            <span class="sub-txt-gray">單位：億人次 ( 100 million trips)</span>
+                        </h4>
+                    </div>
+                    <div class="average-progress">
+                        <div class="man-progress-bar">
+                            <img src="assets/icon_ridership.svg" alt="man-progress">
+                            <div class="progress-number-info">
+                                <div class="year-number"></div>
+                            </div>
+                            <div class="number-txt"> 億人次<br>(100 million trips)</div>
+                        </div>
+                        <div class="year-progress-bar">
+                            <ul class="year">
+                                <li>2016</li>
+                                <li>2017</li>
+                                <li class="year-2018">2018</li>
+                            </ul>
+                            <div class="progress-bar">
+                                <div id="container2016"></div>
+                                <div id="container2017"></div>
+                                <div id="container2018"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
+                <div class="section-2-info-description s-item2">
+                    <div class="total-progress">
+                        <h4>
+                            <span class="sub-txt-color">平均日運量</span>
+                            Average Daily Ridership
+                            <span class="sub-txt-gray">單位：萬人次 ( 10,000 trips)</span>
+                        </h4>
+                    </div>
+                    <div class="average-progress">
+                        <div class="man-progress-bar">
+                            <img src="./images/icon_ridership.svg" alt="man-progress">
+                            <div class="progress-number-info">
+                                <div class="average-number"></div>
+                            </div>
+                            <div class="number-txt">萬人次<br>(10,000 trips)</div>
+                        </div>
+                        <div class="year-progress-bar">
+                            <ul class="year">
+                                <li>2016</li>
+                                <li>2017</li>
+                                <li class="year-2018">2018</li>
+                            </ul>
+                            <div class="progress-bar">
+                                <div id="secContainer2016"></div>
+                                <div id="secContainer2017"></div>
+                                <div id="secContainer2018"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-2-data"></div>
                 <div class="section-2-video">
-                    <video autoplay src="assets/28153219-preview.mp4"></video>
+                    <video autoplay loop src="./images/28153219-preview.mp4"></video>
                 </div>
+            </div>
+            <div class="section-2-info2">
+                <h4>
+                    <div class="info2-sbutitle">
+                        <img src="./images/icon_minimum.svg" alt="clock">
+                        <span class="sub-txt-color">尖峰最小班距</span><span>Minimum Headway During Peak Hours</span> 
+                    </div>
+                    <div class="unit-subtitle">
+                        <span>單位：秒  / Units:Seconds</span>
+                    </div>
+                </h4>
+                <div class="section-2-info-description2"></div>
             </div>
         </div>
     </section>
+    <section class="container">
+        <div class="container-wrap">
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-wrap">
+            <img src="../images/logo.svg" alt="">
+            <span>as of May 13, 2019</span>
+        </div>
+    </footer>
+
+
     <script src="assets/SplitText.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>

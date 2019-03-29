@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Base UI/Icon/document</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Base-UI/Icon/document" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3.625,9.625 L9.75,9.625" id="Path" stroke="#000000"></path>
+        <path d="M3.625,7 L9.75,7" id="Path" stroke="#000000"></path>
+        <path d="M3.625,4.375 L5.375,4.375" id="Path" stroke="#000000"></path>
+        <polygon id="Path" stroke="#000000" points="8 0 1 0 1 13.125 12.375 13.125 12.375 4.375"></polygon>
+        <polyline id="Path" stroke="#000000" points="8 0 8 4.375 12.375 4.375"></polyline>
+    </g>
+</svg>
