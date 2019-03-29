@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+        font-family: "MyName";
+        src: url("~assets/fa-brands-400.ttf");
+    }
+
+h1{
+    color: rgb(13, 255, 0);
+}
+#box1{
+    width: 1000px;
+    height: 1000px;
+    background-image: url("~北捷2018年報_封面.jpg");
+}
+#box2{
+    width: 1000px;
+    height: 1000px;
+    background-image: url("~北捷2018年報_封面2.jpg");
+}
